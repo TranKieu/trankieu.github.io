@@ -1,0 +1,9 @@
+###gitignore###
+
+#Ordner
+/scss
+
+#Datei
+.bowerrc
+.brackets.json
+
