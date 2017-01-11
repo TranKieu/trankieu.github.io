@@ -16,7 +16,8 @@
     display: inline-block;
     height: 37px;
     width: 64px;
-    cursor: pointer;
+    cursor: pointer; 
+	text-decoration: none;
     border-left: 1px solid #11d919;
     border-right: 1px solid #11d919;
 }
@@ -56,13 +57,12 @@
     transform: rotate(-60deg);
 }
 
-.hexa-box .hexagon a {
-    text-decoration: none;
+.hexa-box .hexagon span {
     color: #11d919;
     background: white;
 }
 
-.hexa-box .hexagon:hover a {
+.hexa-box .hexagon:hover span {
     color: white;
     background: #11d919;
 }

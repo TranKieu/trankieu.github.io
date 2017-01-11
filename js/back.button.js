@@ -7,9 +7,9 @@
     "use strict";
     /*
      * <div class="hexa-box">
-     *    <span class="hexagon">
-     *      <a href="../../" class="material-icons">reply</a>
-     *    </span>
+     *    <a  href="../../" class="hexagon">
+     *      <spanclass="material-icons">reply</span>
+     *    </a>
      * </div>
      */
 
@@ -22,16 +22,16 @@
     gohome.style.right = "100px";
     gohome.style.textDecoration = "none";
 
-    //create a <a> node
-    var material = document.createElement("A");
-    material.href = "https://trankieu.github.io";
+    //create a <span> node
+    var material = document.createElement("SPAN");
     //Add Class 
     material.className = "material-icons";
     //Add Text thu thay ban innerhtml
     material.appendChild(document.createTextNode("reply"));
 
-    //Create span.hexagon-node
-    var hexagon = document.createElement("span");
+    //Create a.hexagon-node
+    var hexagon = document.createElement("A");
+	hexagon.href = "https://trankieu.github.io";
     hexagon.className = "hexagon";
     hexagon.appendChild(material);
 
