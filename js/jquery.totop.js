@@ -72,9 +72,15 @@
 
         toTop.on("click", function () {
 
-            $("html").animate({
-                scrollTop: 0
-            }, 700);
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+                window.scrollTo(0);
+            } else {
+                $("html").animate({
+                    scrollTop: 0
+                }, 700);
+            }
+
+
         });
 
 
