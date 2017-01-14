@@ -1,7 +1,10 @@
 /*
  * <!-- Add Button Back to Home   -->
- * <script type="text/javascript" src="../../js/back.button.js"></script>
- * dependencies: Google-Icon
+ * <script type="text/javascript" src="../../js/home.button.js"></script>
+ *
+ * dependencies: Font Awesome
+ * <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ * 
  */
 // Immediate Function
 (function () {
@@ -9,7 +12,7 @@
     /*
      * <div class="hexa-box">
      *    <a  href="../../" class="hexagon">
-     *      <spanclass="material-icons">reply</span>
+     *      <spanclass="fa fa-home"></span>
      *    </a>
      * </div>
      */
@@ -24,17 +27,15 @@
     gohome.style.textDecoration = "none";
 
     //create a <span> node
-    var material = document.createElement("SPAN");
+    var fontawesome = document.createElement("SPAN");
     //Add Class 
-    material.className = "material-icons";
-    //Add Text thu thay ban innerhtml
-    material.appendChild(document.createTextNode("reply"));
+    fontawesome.className = "fa fa-home";
 
     //Create a.hexagon-node
     var hexagon = document.createElement("A");
 	hexagon.href = "https://trankieu.github.io";
     hexagon.className = "hexagon";
-    hexagon.appendChild(material);
+    hexagon.appendChild(fontawesome);
 
     gohome.appendChild(hexagon);
     //gohome.style.
@@ -42,7 +43,7 @@
     //Add Style to body
     var stylesheet = document.createElement("link");
     stylesheet.rel = "stylesheet";
-    stylesheet.href = "../../css/hexagon.css";
+    stylesheet.href = "../../css/hexa-with-awesome.css";
     document.head.appendChild(stylesheet);
 
     //Add node to body
