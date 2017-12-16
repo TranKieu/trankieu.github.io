@@ -32,7 +32,7 @@
 
     //Create a.hexagon-node
     var hexagon = document.createElement("A");
-	hexagon.href = "https://trankieu.github.io";
+    hexagon.href = "https://trankieu.github.io";
     hexagon.className = "hexagon";
     hexagon.appendChild(material);
 
