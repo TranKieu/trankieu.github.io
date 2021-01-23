@@ -3,10 +3,5 @@
 #Ordner
 /scss
 
-#Datei
-.bowerrc
-.brackets.json
-bower.json
 *.map
 /css/style.css.map
-
